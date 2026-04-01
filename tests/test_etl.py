@@ -9,7 +9,7 @@ def test_transform_filters_cancelled():
     """Create test DataFrames with a cancelled order. Confirm it's excluded."""
     df_customers = pd.DataFrame({
         "customer_id": [1],
-        "customer_name": ["Alice"],  # <<< مهم هنا نستخدم customer_name
+        "customer_name": ["Alice"], 
         "city": ["Amman"]
     })
 
@@ -24,7 +24,7 @@ def test_transform_filters_cancelled():
         "order_id": [100],
         "customer_id": [1],
         "order_date": ["2026-04-01"],
-        "status": ["cancelled"]  # This order should be excluded
+        "status": ["cancelled"] 
     })
 
     df_order_items = pd.DataFrame({
@@ -71,7 +71,7 @@ def test_transform_filters_suspicious_quantity():
         "item_id": [1001],
         "order_id": [101],
         "product_id": [10],
-        "quantity": [150]  # Suspicious quantity, should be excluded
+        "quantity": [150]  
     })
 
     data_dict = {
