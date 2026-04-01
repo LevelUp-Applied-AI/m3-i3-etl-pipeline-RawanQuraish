@@ -1,0 +1,12 @@
+{
+    "timestamp": "2026-04-01T14:31:52.831319",
+    "total_records": 0,
+    "checks": {
+        "no_null_customer_id": "PASS",
+        "no_null_customer_name": "PASS",
+        "total_revenue_positive": "PASS",
+        "no_duplicate_customer_id": "PASS",
+        "total_orders_positive": "PASS"
+    },
+    "outliers": []
+}
